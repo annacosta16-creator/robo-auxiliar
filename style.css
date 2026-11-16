@@ -1,0 +1,191 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080D18;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* CAIXA PRINCIPAL */
+
+.caixa-principal {
+    background: #111D30;
+
+    width: 100%;
+    max-width: 650px;
+
+    padding: 35px;
+
+    border: 1px solid #245A85;
+    border-radius: 15px;
+
+    box-shadow: 0 0 30px #123A5A;
+}
+
+/* TITULO */
+
+h1 {
+    color: #36C5F0;
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #9CB7CC;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+/* INFORMAÇÕES */
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+
+    color: #36C5F0;
+    font-size: 11px;
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+/* HISTÓRIA */
+
+.caixa-perguntas {
+    background: #192B42;
+
+    padding: 22px;
+
+    border-radius: 10px;
+
+    line-height: 1.7;
+    font-size: 16px;
+
+    margin-bottom: 25px;
+}
+
+/* ALTERNATIVAS */
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.botao-alternativa {
+    background: #183A59;
+
+    color: white;
+
+    border: 1px solid #2675A8;
+    border-radius: 8px;
+
+    padding: 16px;
+
+    text-align: left;
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.botao-alternativa:hover {
+    background: #23618A;
+    transform: scale(1.02);
+}
+
+/* RESULTADO DA ESCOLHA */
+
+.caixa-resultado {
+    display: none;
+
+    background: #142E3C;
+
+    border-left: 4px solid #36C5F0;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    border-radius: 8px;
+
+    line-height: 1.7;
+}
+
+.texto-resultado {
+    color: #C8E9F5;
+}
+
+/* BOTÕES DE CONTROLE */
+
+.botao-continuar,
+.botao-reiniciar {
+    display: none;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #087EA4;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.botao-continuar:hover,
+.botao-reiniciar:hover {
+    background: #12A6D5;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    text-align: center;
+
+    color: #647F99;
+
+    font-size: 12px;
+
+    margin-top: 30px;
+}
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+    .caixa-principal {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+}
